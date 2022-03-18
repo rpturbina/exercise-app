@@ -1,5 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import axios from "axios";
+
+const giphy_secret_key = process.env.REACT_APP_GIPHY_KEY;
+
+const endpoint = `https://api.giphy.com/v1/gifs/random?api_key=${giphy_secret_key}&tag=&rating=g`;
+
+const getResponse = async () => {
+  try {
+    const response = await axios.get(endpoint, {});
+    if (response.status !== 200) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getResponse();
 
 function App() {
   return (
