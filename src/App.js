@@ -1,11 +1,10 @@
 import "./App.css";
 import Home from "./pages/home";
 /**
- * TODO : Module-2-Exercise-2
- * * From previous exercise, convert elements into components
- * * Remember to put your components in /src/components/[your-component-name]/index.js
- * * For <Gif> component, read this JS variable and map it as props (hint: just use url and title)
- * * https://gist.github.com/mfaarabi/24f2aa2a8baa43567c7ddbdc270135b4
+ * TODO : Module-2-Exercise-3
+ * * Loop <Gif> component from this JS array variable
+ * * Filter out rating of g (hint: use rating field)
+ * * https://gist.github.com/mfaarabi/f96d331f32528790342982f8463a5665
  */
 
 function App() {
