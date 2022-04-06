@@ -9,6 +9,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Using API provided by GIPHY, create a Trending page. Reuse the Gif component that you have created earlier.
 [https://developers.giphy.com/docs/api/endpoint#trending](https://developers.giphy.com/docs/api/endpoint#trending)
 
+### **Exercise - Module 4 - Session 2 - React Router**
+
+Store the search queries on Redux.
+
 ## Available Scripts
 
 In the project directory, you can run:
