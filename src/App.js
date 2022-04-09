@@ -3,8 +3,9 @@ import Search from "./pages/search";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Trending from "./pages/trending";
 /**
- * TODO : Module-4-Exercise-1
- * * Store the search queries on Redux
+ * TODO : Module-4-Exercise-3
+ * * 1. Analyze your code, write down any impure / mutable codes that you wrote, and fix those
+ * * 2. Try to run eslint and fix the problems (if any)
  */
 
 function App() {

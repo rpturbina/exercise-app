@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { searchGifs } from "../../redux/actions";
 import GifImage from "../../components/Gif";
 import SearchBar from "../../components/SearchBar";
+import { getGifs } from "../../libs/giphy";
 
 const Search = () => {
   const dispatch = useDispatch();
@@ -10,18 +11,19 @@ const Search = () => {
   const [gifs, setGifs] = useState([]);
   const [query, setQuery] = useState("");
 
-  const getGifs = async (event) => {
-    try {
-      event.preventDefault();
+  const handleSearchSubmit = async (event) => {
+    event.preventDefault();
+    if (!query) {
+      alert("Please enter a keyword for search");
+      return;
+    }
+    if (query) {
       dispatch(searchGifs(query));
-      const giphy_secret_key = process.env.REACT_APP_GIPHY_KEY;
-      let LIMIT = 12;
-      let queryTerm = query;
-      let endPoint = `https://api.giphy.com/v1/gifs/search?api_key=${giphy_secret_key}&q=${queryTerm}&limit=${LIMIT}`;
-      const gifs = await fetch(endPoint).then((response) => response.json());
+      const gifs = await getGifs({
+        pathname: "search",
+        query: query,
+      });
       setGifs(gifs.data);
-    } catch (error) {
-      console.error(error);
     }
   };
 
@@ -33,7 +35,7 @@ const Search = () => {
       <SearchBar
         searchInput={query}
         handleSearchInput={handleSearchInput}
-        handleSearchSubmit={getGifs}
+        handleSearchSubmit={handleSearchSubmit}
       />
       {gifs.map((gif) => (
         <GifImage key={gif.id} src={gif.images.fixed_width.url} title={gif.title} />
