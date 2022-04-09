@@ -1,18 +1,35 @@
 import "./App.css";
-import Home from "./pages/home";
+import Search from "./pages/search";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Trending from "./pages/trending";
 /**
- * TODO : Module-2-Exercise-2
- * * From previous exercise, convert elements into components
- * * Remember to put your components in /src/components/[your-component-name]/index.js
- * * For <Gif> component, read this JS variable and map it as props (hint: just use url and title)
- * * https://gist.github.com/mfaarabi/24f2aa2a8baa43567c7ddbdc270135b4
+ * TODO : Module-4-Exercise-3
+ * * 1. Analyze your code, write down any impure / mutable codes that you wrote, and fix those
+ * * 2. Try to run eslint and fix the problems (if any)
  */
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/trending">Trending Gif</Link>
+          </li>
+          <li>
+            <Link to="/search">Search Gif</Link>
+          </li>
+        </ul>
+      </nav>
+      <Switch>
+        <Route path="/trending">
+          <Trending />
+        </Route>
+        <Route path="/search">
+          <Search />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

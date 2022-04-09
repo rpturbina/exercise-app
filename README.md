@@ -1,6 +1,17 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and built to do hands-on task/ (exercise) for Generasi Gigih 2.0 - Frontend Engineering Track
+
+## **Update**
+
+### **Exercise - Module 4 - Session 2 - React Router**
+
+Using API provided by GIPHY, create a Trending page. Reuse the Gif component that you have created earlier.
+[https://developers.giphy.com/docs/api/endpoint#trending](https://developers.giphy.com/docs/api/endpoint#trending)
+
+### **Exercise - Module 4 - Session 2 - React Router**
+
+Store the search queries on Redux.
 
 ## Available Scripts
 
