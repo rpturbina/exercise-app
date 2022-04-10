@@ -4,12 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## **Update**
 
+### **Exercise - Module 4 - Session 3 - Clean Code & ESLint**
+
+1. Analyze your code, write down any impure / mutable codes that you wrote, and fix those
+2. Try to run eslint and fix the problems (if any)
+
 ### **Exercise - Module 4 - Session 2 - React Router**
 
 Using API provided by GIPHY, create a Trending page. Reuse the Gif component that you have created earlier.
 [https://developers.giphy.com/docs/api/endpoint#trending](https://developers.giphy.com/docs/api/endpoint#trending)
 
-### **Exercise - Module 4 - Session 2 - React Router**
+### **Exercise - Module 4 - Session 1 - Redux**
 
 Store the search queries on Redux.
 
