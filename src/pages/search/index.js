@@ -30,17 +30,20 @@ const Search = () => {
   const handleSearchInput = (event) => setQuery(event.target.value);
 
   return (
-    <div className="search">
+    <>
       <h1>Search Gifs: {searchQuery}</h1>
       <SearchBar
         searchInput={query}
         handleSearchInput={handleSearchInput}
         handleSearchSubmit={handleSearchSubmit}
       />
-      {gifs.map((gif) => (
-        <GifImage key={gif.id} src={gif.images.fixed_width.url} title={gif.title} />
-      ))}
-    </div>
+      <div className="search">
+        {gifs &&
+          gifs.map((gif) => (
+            <GifImage key={gif.id} src={gif.images.fixed_width.url} title={gif.title} />
+          ))}
+      </div>
+    </>
   );
 };
 

@@ -14,9 +14,10 @@ const Trending = () => {
 
   return (
     <div className="trending">
-      {gifs.map((gif) => (
-        <GifImage key={gif.id} src={gif.images.fixed_width.url} title={gif.title} />
-      ))}
+      {gifs &&
+        gifs.map((gif) => (
+          <GifImage key={gif.id} src={gif.images.fixed_width.url} title={gif.title} />
+        ))}
     </div>
   );
 };

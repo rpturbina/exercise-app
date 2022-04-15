@@ -3,9 +3,8 @@ import Search from "./pages/search";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Trending from "./pages/trending";
 /**
- * TODO : Module-4-Exercise-3
- * * 1. Analyze your code, write down any impure / mutable codes that you wrote, and fix those
- * * 2. Try to run eslint and fix the problems (if any)
+ * TODO : Module-5-Exercise-1
+ * * Layout your giphy app into the following display (hint: use no. 7 “RAM” from https://1linelayouts.glitch.me/ )
  */
 
 function App() {
