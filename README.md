@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## **Update**
 
-### **Exercise - Module 4 - Session 3 - Clean Code & ESlint**
+### **Exercise - Module 4 - Session 3 - Clean Code & ESLint**
 
 1. Analyze your code, write down any impure / mutable codes that you wrote, and fix those
 2. Try to run eslint and fix the problems (if any)
