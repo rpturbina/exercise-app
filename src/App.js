@@ -3,9 +3,9 @@ import Search from "./pages/search";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Trending from "./pages/trending";
 /**
- * TODO : Module-4-Exercise-3
- * * 1. Analyze your code, write down any impure / mutable codes that you wrote, and fix those
- * * 2. Try to run eslint and fix the problems (if any)
+ * TODO : Module-5-Exercise-2
+ * * ● From giphy app, identify existing components and look for UI component library that provides your needs.
+ * * ● (nice to have/extra points) implement the new component into giphy app.
  */
 
 function App() {

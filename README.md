@@ -4,6 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## **Update**
 
+### **Exercise - Module 5 - Session 2 - UI Component Library**
+
+* From giphy app, identify existing components and look for
+UI component library that provides your needs.
+* (nice to have/extra points) implement the new component
+into giphy app.
+
+### **Exercise - Module 5 - Session 1 - CSS Grid & Flexbox**
+
+Layout your giphy app into the following display (hint: use no. 7 “RAM” from [https://1linelayouts.glitch.me/](https://1linelayouts.glitch.me/) )
+
 ### **Exercise - Module 4 - Session 3 - Clean Code & ESLint**
 
 1. Analyze your code, write down any impure / mutable codes that you wrote, and fix those
