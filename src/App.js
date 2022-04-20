@@ -3,8 +3,9 @@ import Search from "./pages/search";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Trending from "./pages/trending";
 /**
- * TODO : Module-5-Exercise-1
- * * Layout your giphy app into the following display (hint: use no. 7 “RAM” from https://1linelayouts.glitch.me/ )
+ * TODO : Module-5-Exercise-2
+ * * ● From giphy app, identify existing components and look for UI component library that provides your needs.
+ * * ● (nice to have/extra points) implement the new component into giphy app.
  */
 
 function App() {
